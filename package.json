@@ -1,0 +1,36 @@
+{
+  "name": "currenci",
+  "version": "0.0.0",
+  "description": "List of currencies and get random currency",
+  "main": "index.js",
+  "repository": "git@github.com:bukinoshita/currenci.git",
+  "author": "Bu Kinoshita <bukinoshita@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "keywords": [
+    "currenci",
+    "currency",
+    "code",
+    "symbol",
+    "convert",
+    "transform",
+    "money",
+    "transform-currency",
+    "random",
+    "list"
+  ],
+  "dependencies": {
+    "unique-random-array": "^1.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.20.0",
+    "xo": "^0.18.2"
+  },
+  "xo": {
+    "semicolon": false,
+    "space": true,
+    "esnext": true
+  }
+}
