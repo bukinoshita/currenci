@@ -3,12 +3,13 @@
   "version": "0.0.1",
   "description": "List of currencies and get random currency",
   "main": "index.js",
-  "repository": "git@github.com:bukinoshita/currenci.git",
+  "repository": "bukinoshita/currenci",
   "author": "Bu Kinoshita <bukinoshita@gmail.com>",
   "license": "MIT",
-  "scripts": {
-    "test": "xo && ava"
-  },
+  "files": [
+    "index.js",
+    "lib"
+  ],
   "keywords": [
     "currenci",
     "currency",
@@ -21,16 +22,37 @@
     "random",
     "list"
   ],
+  "scripts": {
+    "test": "nyc ava",
+    "lint": "xo"
+  },
   "dependencies": {
-    "unique-random-array": "^1.0.0"
+    "unique-random-array": "^2.0.0"
   },
   "devDependencies": {
-    "ava": "^0.20.0",
-    "xo": "^0.18.2"
+    "ava": "^2.1.0",
+    "eslint-config-prettier": "^5.0.0",
+    "husky": "^2.4.1",
+    "lint-staged": "^8.2.1",
+    "nyc": "^14.1.1",
+    "prettier": "^1.18.2",
+    "xo": "^0.24.0"
   },
   "xo": {
-    "semicolon": false,
-    "space": true,
-    "esnext": true
+    "extends": [
+      "prettier"
+    ]
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --semi false --single-quote --write",
+      "yarn lint",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }

@@ -1,9 +1,10 @@
-'use strict'
-
+// Packages
 import test from 'ava'
-import m from './'
 
-test(t => {
+// Root
+import m from '.'
+
+test('currenci', t => {
   const curr = m.random()
   const prev = m.random()
   t.true(m.list.length === 118)

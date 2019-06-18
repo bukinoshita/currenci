@@ -1,14 +1,12 @@
-# currenci [![Build Status](https://travis-ci.org/bukinoshita/currenci.svg?branch=master)](https://travis-ci.org/bukinoshita/currenci)
+# currenci [![Build Status](https://travis-ci.org/bukinoshita/currenci.svg?branch=master)](https://travis-ci.org/bukinoshita/currenci) [![codecov](https://codecov.io/gh/bukinoshita/currenci/branch/master/graph/badge.svg)](https://codecov.io/gh/bukinoshita/currenci)
 
 > List of currencies and get random currency
-
 
 ## Install
 
 ```
-$ npm install --save currenci
+$ yarn add currenci
 ```
-
 
 ## Usage
 
@@ -21,7 +19,6 @@ currenci.random()
 currenci.list
 // => [ { "name": "US Dollar", "symbol": "$", "code": "USD" }, ...]
 ```
-
 
 ## API
 
@@ -40,7 +37,6 @@ Returns a random currency
 - [transform-currency](https://github.com/bukinoshita/transform-currency) — Transform currency code to symbol
 - [has-currency-code](https://github.com/bukinoshita/has-currency-code) — Check if given string has currency code
 - [find-currency-code](https://github.com/bukinoshita/find-currency-code) — Find currency code from given string
-
 
 ## License
 

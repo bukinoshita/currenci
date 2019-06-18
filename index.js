@@ -1,5 +1,4 @@
-'use strict'
-
+// Lib
 const list = require('./lib/list')
 const random = require('./lib/random')
 
