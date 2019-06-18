@@ -1,6 +1,6 @@
 {
   "name": "currenci",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "List of currencies and get random currency",
   "main": "index.js",
   "repository": "bukinoshita/currenci",
